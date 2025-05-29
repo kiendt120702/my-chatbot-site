@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website với Chatbot Dify</title>
+  <style>
+    /* CSS cơ bản để trang web trông đẹp hơn */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chào mừng đến với Website của bạn</h1>
+  <p>Đây là một trang web đơn giản được triển khai trên GitHub Pages. Nhấp vào biểu tượng chatbot ở góc dưới bên phải để tương tác!</p>
+
+  <!-- Mã nhúng widget chatbot của Dify -->
+  <script src="https://cdn.dify.ai/widget.js"></script>
+  <script>
+    window.difyChatbotConfig = {
+      appId: "26MwTIx8J1ceVFZV", // Thay bằng App ID thực tế từ Dify
+      primaryColor: "#007BFF", // Màu chủ đạo của chatbot
+      position: "bottom-right", // Vị trí widget
+      autoOpen: true, // Tự động mở chatbot (true/false)
+      icon: "https://thanhnien.vn/chiem-nguong-nhung-buc-anh-thien-nhien-dep-nhat-the-gioi-18524012511141175.htm" // Thay bằng URL logo của bạn (tùy chọn)
+    };
+  </script>
+</body>
+</html>
